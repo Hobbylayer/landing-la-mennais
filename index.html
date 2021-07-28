@@ -6,66 +6,88 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="./css/styles.css" />
 	<link rel="stylesheet" href="./css/bootstrap.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
 
 	<title>La mennais</title>
 </head>
 
 <body>
 	<!-- HEADER -->
-	<header class="" style="background: url(./assets/placeholder.jpg) gray; background-size: contain no-repeat; height: 90vh;">
+	<header class="img__backgroud">
 		</br>
 		<!-- Barra de navegación -->
 		<nav class="navbar navbar-light bg-light">
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
-						class="d-inline-block align-text-top">
+					<img 
+					src="./assets/Logo-Head.png" 
+					alt="logo-la-mennais" 
+					class="d-inline-block align-text-top">
 				</a>
 			</div>
 		</nav>
 
 		<!-- Conteneder de formulario y título -->
-		<div class="container" style="height:81vh;">
-
-			<div class="row" class="" style="height: 100%;">
+		<div class="container d-flex align-items-center h-100 w-8" style="max-width: 980px; min-height: 700px;">
+		
+			<div 
+			    class="row"
+				>
 				<!-- Columna 1 -->
-				<div class="col d-flex flex-row justify-content-center align-items-center"
-					style="height: 100%;">
-					<h2 class="text-white">Conocé sobre nuestras propuestas educativas</h2>
+				<div class="col-sm-12 col-md-7 d-flex flex-row justify-content-center align-items-center">
+					<div class="d-flex flex-row justify-content-center">
+						<h2 
+							id="title" 
+							class="text-white"
+						>Conocé sobre nuestras propuestas educativas</h2>
+					</div>
 				</div>
 				<!-- Fin Columna 1 -->
+
 				<!-- Columna 2 -->
-				<div class="col d-flex flex-row justify-content-start align-items-center">
-					<div class="card"
-						style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-						<header class="card-header bg-transparent text-center" style="height: 15vh; border-bottom: 0;">
-							<h2>¿Agendamos una entrevista?</h1>
+				<div class="col-sm-12 col-md-5  d-flex flex-row justify-content-end align-items-center">
+					<div class="card form__contact">
+						<header 
+						class="card-header bg-transparent text-center" 
+						style="border-bottom: 0;"
+						>
+							<h2 id="title__form">¿Agendamos una entrevista?</h1>
 								<div class="container">
-									<img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
-										height="24" class="d-inline-block align-text-top">
+									<img 
+									src="./assets/Scroll-down.png"
+									alt="Scroll down"
+									class="d-inline-block align-text-top">
 								</div>
 						</header>
 						<div class="card-body">
-							<form>
+							<form >
 								<div class="mb-3">
-									<label for="inpuntNombre" class="form-label">Nombre y Apellido</label>
-									<input type="text" class="form-control" id="inpuntNombre" aria-describedby="ayudaNombre">
+									<input 
+									placeholder="Nombre y Apellido"
+									type="text" class="form-control" id="inpuntNombre" aria-describedby="ayudaNombre">
 								</div>
 								<div class="mb-3">
-									<label for="inputEmail" class="form-label">Email</label>
-									<input type="email" class="form-control" id="inputEmail" aria-describedby="ayudaEmail">
+									<input 
+									placeholder="Email"
+									type="email" class="form-control" id="inputEmail" aria-describedby="ayudaEmail">
 								</div>
 								<div class="mb-3">
-									<label for="inputTelefono" class="form-label">Teléfono</label>
-									<input type="tel" class="form-control" id="inputTelefono" aria-describedby="ayudaTelefono">
+									<input 
+									placeholder="Teléfono"
+									type="tel" class="form-control" id="inputTelefono" aria-describedby="ayudaTelefono">
 								</div>
 								<div class="mb-3">
-									<label for="inputMensaje" class="form-label">Mi consulta es:</label>
-									<input type="text" class="form-control" id="inputMensaje">
+									<input 
+									placeholder="Mi consulta es:"
+									type="text" class="form-control" id="inputMensaje">
 								</div>
-								<button type="submit" class="btn btn-primary">Enviar</button>
+								<div class="d-flex justify-content-center">
+									<button 
+									 type="submit" 
+									 class="btn btn-primary" 
+									 onclick="event.preventDefault()" >ENVIAR</button>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -80,8 +102,14 @@
 		<section>
 			<div class="row" style="margin-top: -3rem;">
 				<div class="col py-3 d-flex flex-row justify-content-center align-items-center">
-					<div class="card" style="width: 18rem;">
-						<img src="./assets/500.jpg" class="card-img-top" alt="...">
+					<div class="card">
+						<div class="icon__contact-form">
+							<img 
+							src="./assets/Calidez.png" 
+							alt="..."/>
+							<h3>Calidez</h3>
+							<hr/>
+						</div>
 						<div class="card-body">
 							<p class="card-text">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam

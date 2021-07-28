@@ -1,0 +1,90 @@
+/* 
+#004E9C - deep blue
+#035AA6 - middle blue
+#035AA6 - blue light
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+:root {
+	--deepblue: #004e9c;
+	--middle-blue: #035aa6;
+	--light-blue: #05aff2;
+}
+/* font-family: 'Nunito', sans-serif; */
+
+.form-control {
+	border: solid 1px;
+	border-radius: 10px;
+	border-color: var(--light-blue);
+}
+
+.img__backgroud {
+	background: linear-gradient(
+			to bottom,
+			rgba(3, 90, 166, 0.322) 0%,
+			rgba(3, 90, 166, 0.342) 100%
+		),
+		url(../assets/HomeImagen.jpg) var(--light-blue);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	min-height: 95vh;
+}
+
+@media (mix-width: 700px) {
+	.img__backgroud {
+		background: linear-gradient(
+				to bottom,
+				rgba(3, 90, 166, 0.253) 0%,
+				rgba(3, 90, 166, 0.24) 100%
+			),
+			url(../assets/HomeImagen.jpg) gray;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		min-height: 100vh;
+	}
+}
+
+.form__contact {
+	max-width: 350px;
+	max-height: 600px;
+	padding: 1rem 0 1rem 0;
+}
+.card {
+	border: none;
+	border-radius: 1rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+/* 
+.card-img-top {
+	border-radius: 1rem 1rem;
+} */
+
+.btn {
+	min-width: 300px;
+	border-radius: 10px;
+	background-color: var(--deepblue);
+	border-color: var(--deepblue);
+}
+
+.icon__contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+#title__form {
+	font-size: 2;
+	font-weight: 700;
+	color: var(--deepblue);
+}
