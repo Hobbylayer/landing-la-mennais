@@ -9,6 +9,7 @@
 	--deepblue: #004e9c;
 	--middle-blue: #035aa6;
 	--light-blue: #05aff2;
+	--gray: #746c82;
 }
 /* font-family: 'Nunito', sans-serif; */
 
@@ -22,7 +23,7 @@
 }
 
 .img__backgroud {
-	background: linear-gradient(to bottom, #0d0d0d79 0%, #0d0d0d79 100%),
+	background: linear-gradient(to bottom, #746c8267 0%, #746c8270 100%),
 		url(../assets/HomeImagen.jpg);
 	background-size: cover;
 	background-position: center;
@@ -118,6 +119,31 @@ hr {
 	height: 30vh;
 	background-color: var(--middle-blue);
 	margin-top: -30vh;
+}
+
+footer {
+	color: var(--gray);
+	padding: 1.5rem 0 1.5rem 0;
+}
+footer h3 {
+	color: var(--middle-blue);
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+footer h5 {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	font-size: 1rem;
+}
+
+li {
+	margin: 1rem 0 1rem 0;
 }
 
 @media (max-width: 750px) {
