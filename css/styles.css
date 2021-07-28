@@ -168,7 +168,7 @@ li {
 		font-size: 2.2rem;
 		font-weight: 800;
 		height: 100%;
-		padding: 3rem 0 2rem 0;
+		padding: 4rem 0 2rem 0;
 		text-align: center;
 		text-shadow: 2px 2px 6px rgb(43, 42, 42);
 		text-shadow: black;
@@ -209,5 +209,13 @@ li {
 		color: var(--light-blue);
 		font-size: 1.3rem;
 		font-weight: 700;
+	}
+	footer h5 {
+		font-size: 0.8rem;
+		font-weight: 700;
+		margin-top: 1rem;
+	}
+	#title__main {
+		height: 56vh;
 	}
 }
