@@ -5,86 +5,82 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/styles.min.css" />
+
+
+	<link rel="stylesheet" href="./css_last/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css_last/styles.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 
 	<title>La mennais</title>
 </head>
 
 <body>
 	<!-- HEADER -->
-	<header class="header">
-
-		<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-		<div class="overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-		  <source src="https://expressativo.com/wp-content/uploads/2021/07/production-id-5000086_wBYZ5Ejp.mp4" type="video/mp4">
-		</video>
-	</br>
-	<!-- Barra de navegación -->
-	<nav class="navbar navbar-light bg-light">
-		<div class="container" style="max-width: 950px;">
-			<a class="navbar-brand" href="#">
-				<img src="./assets/Logo-Head.png" alt="logo-la-mennais" class="d-inline-block align-text-top">
-			</a>
-		</div>
-	</nav>
-
-	<!-- Conteneder de formulario y título -->
-	<div id="content__header" class="container form__container d-flex align-items-center w-8">
-
-		<div class="row">
-			<!-- Columna 1 -->
-			<div class="col-sm-12 col-md-7 d-flex flex-row justify-content-center align-items-center">
-				<div id="title__main" class="d-flex flex-row justify-content-center">
-					<h2 id="title" class="text-white">Conocé sobre nuestras propuestas educativas</h2>
-				</div>
+	<header class="img__backgroud">
+		</br>
+		<!-- Barra de navegación -->
+		<nav class="navbar navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/Logo-Head.png" alt="logo-la-mennais" class="d-inline-block align-text-top">
+				</a>
 			</div>
-			<!-- Fin Columna 1 -->
+		</nav>
 
-			<!-- Columna 2 -->
-			<div class="col-sm-12 col-md-5  d-flex flex-row justify-content-end align-items-center">
-				<div class="card form__contact">
-					<header class="card-header bg-transparent text-center" style="border-bottom: 0;">
-						<h2 class="title__Two">¿Agendamos una entrevista?</h1>
-							<div class="container">
-								<img src="./assets/Scroll-down.png" alt="Scroll down"
-									class="d-inline-block align-text-top">
-							</div>
-					</header>
-					<div class="card-body">
-						<form>
-							<div class="mb-3">
-								<input placeholder="Nombre y Apellido" type="text" class="form-control"
-									id="inpuntNombre" aria-describedby="ayudaNombre">
-							</div>
-							<div class="mb-3">
-								<input placeholder="Email" type="email" class="form-control" id="inputEmail"
-									aria-describedby="ayudaEmail">
-							</div>
-							<div class="mb-3">
-								<input placeholder="Teléfono" type="tel" class="form-control" id="inputTelefono"
-									aria-describedby="ayudaTelefono">
-							</div>
-							<div class="mb-3">
-								<input placeholder="Mi consulta es:" type="text" class="form-control"
-									id="inputMensaje">
-							</div>
-							<div class="d-flex justify-content-center">
-								<button type="submit" class="btn btn-primary"
-									onclick="event.preventDefault(), alert('Upss aún no estoy en funcionamiento intenta luego....')">ENVIAR</button>
-							</div>
-						</form>
+		<!-- Conteneder de formulario y título -->
+		<div class="container form__container d-flex align-items-center h-100 w-8">
+
+			<div class="row">
+				<!-- Columna 1 -->
+				<div class="col-sm-12 col-md-7 d-flex flex-row justify-content-center align-items-center">
+					<div id="title__main" class="d-flex flex-row justify-content-center">
+						<h2 id="title" class="text-white">Conocé sobre nuestras propuestas educativas</h2>
 					</div>
 				</div>
-			</div>
-			<!-- Fin Columna 2 -->
-		</div>
-	</header>
+				<!-- Fin Columna 1 -->
 
+				<!-- Columna 2 -->
+				<div class="col-sm-12 col-md-5  d-flex flex-row justify-content-end align-items-center">
+					<div class="card form__contact">
+						<header class="card-header bg-transparent text-center" style="border-bottom: 0;">
+							<h2 class="title__Two">¿Agendamos una entrevista?</h1>
+								<div class="container">
+									<img src="./assets/Scroll-down.png" alt="Scroll down"
+										class="d-inline-block align-text-top">
+								</div>
+						</header>
+						<div class="card-body">
+							<form>
+								<div class="mb-3">
+									<input placeholder="Nombre y Apellido" type="text" class="form-control"
+										id="inpuntNombre" aria-describedby="ayudaNombre">
+								</div>
+								<div class="mb-3">
+									<input placeholder="Email" type="email" class="form-control" id="inputEmail"
+										aria-describedby="ayudaEmail">
+								</div>
+								<div class="mb-3">
+									<input placeholder="Teléfono" type="tel" class="form-control" id="inputTelefono"
+										aria-describedby="ayudaTelefono">
+								</div>
+								<div class="mb-3">
+									<input placeholder="Mi consulta es:" type="text" class="form-control"
+										id="inputMensaje">
+								</div>
+								<div class="d-flex justify-content-center">
+									<button type="submit" class="btn btn-primary"
+										onclick="event.preventDefault(), alert('Upss aún no estoy en funcionamiento intenta luego....')">ENVIAR</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Fin Columna 2 -->
+			</div>
+
+	</header>
 	<!-- CUERPO CONTENIDO PRINCIPAL -->
 	<main class="container" style="max-width: 950px;">
 		<!--FEATURES  -->
@@ -145,30 +141,16 @@
 					día.
 				</h4>
 			</div>
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/cpmStXMasAA?controls=0" 
-				title="YouTube video player" 
-				frameborder="0" 
-				allow="accelerometer; 
-				autoplay clipboard-write; 
-				encrypted-media; 
-				gyroscope; 
-				picture-in-picture" allowfullscreen
-				class="mt-5 video-2 rounded"
-				>
-				</iframe>
 
 			<!-- IMAGEN CON CANVAS -->
-			<!-- <div class="card text-white mt-5 video__secction">
+			<div class="card text-white mt-5 video__secction">
 				<img src="./assets/HomeImagen.jpg" class="card-img overlay__video" alt="...">
 				<div class="card-img-overlay d-flex flex-row justify-content-start align-items-center">
 					<h2 class="title__video">
 						"En La Mennais hay <br /> un lugar especial <br />para cada alumno"
 					</h2>
 				</div>
-			</div> -->
+			</div>
 			<!-- FIN IMAGEN CON CAVAS -->
 
 			<div class="row mt-3" style="margin-bottom: -3rem;">
@@ -176,7 +158,7 @@
 					<div class="card card__levels bg-transparent">
 						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top" alt="...">
 						<div class="card-body">
-							<p class="h2 text-center text-white text-blue">
+							<p class="h2 text-center text-white">
 								Inicial
 							</p>
 						</div>
@@ -186,7 +168,7 @@
 					<div class="card card__levels bg-transparent">
 						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top" alt="...">
 						<div class="card-body">
-							<p class="h2 text-center text-white text-blue">
+							<p class="h2 text-center text-white">
 								Primaria
 							</p>
 						</div>
@@ -245,7 +227,6 @@
 	</footer>
 	<script src="./js/getYear.js">
 	</script>
-
 </body>
 
 </html>
