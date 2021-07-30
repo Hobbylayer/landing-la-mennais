@@ -3,7 +3,7 @@
     $correo = $_POST['email'];
 	$mensaje = $_POST['mensaje'];
     $telefono = $_POST['telf'];
-    $destinatario = "javier@expressativo.com";
+    $destinatario = "tuEmail@expressativo.com";
 
     $header ="Enviado desde La Mennais formulario de contacto";
     $mensajeCompleto = $telefono . "\n" . $mensaje . "\nAtentamente: " . $name;
