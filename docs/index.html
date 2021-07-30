@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
-
+	<script src="./js/canvas.js" defer></script>
 	<title>La mennais</title>
 </head>
 
@@ -120,6 +120,9 @@
 	<main class="container" style="max-width: 950px;">
 		<!--FEATURES  -->
 		<section>
+			<canvas id="canvas-balloon" width="90" height="400" style="position: absolute; margin-top: 3rem; margin-left: -8rem;">
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
 			<div class="row" style="margin-top: -3rem;">
 				<div class="col-12 col-sm-12 col-md-4 py-3 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__features">
@@ -276,8 +279,9 @@
 			<h5><span id="year"></span> Copyright. Todos los derechos Reservados Colegio La Mennais</h5>
 		</div>
 	</footer>
-	<script src="./js/getYear.js" defer>
-	</script>
+
+	<script src="./js/getYear.js" defer></script>
+	<!-- <script src="js/canvas.js"></script> -->
 
 </body>
 
