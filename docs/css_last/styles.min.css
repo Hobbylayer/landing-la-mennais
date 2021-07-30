@@ -188,4 +188,7 @@ li {
 		font-weight: 700;
 		margin-top: 1rem;
 	}
+	.section__divider {
+		display: none !important;
+	}
 }

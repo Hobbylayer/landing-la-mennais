@@ -235,6 +235,13 @@ li {
 		color: var(--middle-blue) !important;
 		margin-bottom: 0;
 	}
+	.section__divider {
+		display: none;
+		margin-top: 0;
+	}
+	footer {
+		margin-top: 1rem;
+	}
 }
 
 @media (max-height: 630px) {

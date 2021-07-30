@@ -56,26 +56,57 @@
 							</div>
 					</header>
 					<div class="card-body">
-						<form>
+						<form method="POST" action="./mail.php">
 							<div class="mb-3">
-								<input placeholder="Nombre y Apellido" type="text" class="form-control"
-									id="inpuntNombre" aria-describedby="ayudaNombre">
+								<input 
+								aria-describedby="ayudaNombre"
+								id="inpuntNombre" 
+								name="fullName"
+								placeholder="Nombre y Apellido" 
+								required
+								type="text" class="form-control"
+								>
 							</div>
 							<div class="mb-3">
-								<input placeholder="Email" type="email" class="form-control" id="inputEmail"
-									aria-describedby="ayudaEmail">
+								<input 
+								aria-describedby="ayudaEmail"
+								class="form-control" 
+								id="inputEmail"
+								name="email"
+								placeholder="Email" 
+								required
+								type="email" 
+								>
 							</div>
 							<div class="mb-3">
-								<input placeholder="Teléfono" type="tel" class="form-control" id="inputTelefono"
-									aria-describedby="ayudaTelefono">
+								<input 
+								aria-describedby="ayudaTelefono"
+								class="form-control" 
+								id="inputTelefono"
+								name="telf" 
+								placeholder="Teléfono" 
+								required	
+								type="tel" 
+								>
 							</div>
 							<div class="mb-3">
-								<input placeholder="Mi consulta es:" type="text" class="form-control"
-									id="inputMensaje">
+							<input 
+								class="form-control"
+								id="inputMensaje"
+								name="mensaje" 
+								placeholder="Mi consulta es:" 
+								required
+								type="text"
+								autocomplete="off"
+								>
 							</div>
 							<div class="d-flex justify-content-center">
-								<button type="submit" class="btn btn-primary"
-									onclick="event.preventDefault(), alert('Upss aún no estoy en funcionamiento intenta luego....')">ENVIAR</button>
+								<button 
+								   type="submit" 
+								   class="btn btn-primary"
+								   >
+								   ENVIAR
+								</button>
 							</div>
 						</form>
 					</div>
@@ -90,7 +121,7 @@
 		<!--FEATURES  -->
 		<section>
 			<div class="row" style="margin-top: -3rem;">
-				<div class="col-12 col-sm-12  col-md-4 py-3 d-flex flex-row justify-content-center align-items-center">
+				<div class="col-12 col-sm-12 col-md-4 py-3 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__features">
 						<div class="icon__contact-form">
 							<img src="./assets/Calidez.png" alt="..." />
@@ -171,8 +202,8 @@
 			</div> -->
 			<!-- FIN IMAGEN CON CAVAS -->
 
-			<div class="row mt-3" style="margin-bottom: -3rem;">
-				<div class="col py-3 d-flex flex-row justify-content-center align-items-center">
+			<div class="row mt-3">
+				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__levels bg-transparent">
 						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top" alt="...">
 						<div class="card-body">
@@ -182,7 +213,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col py-3 d-flex flex-row justify-content-center align-items-center">
+				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__levels bg-transparent">
 						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top" alt="...">
 						<div class="card-body">
@@ -192,17 +223,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col py-3 d-flex flex-row justify-content-center align-items-center">
+				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__levels bg-transparent">
 						<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top" alt="img_secundaria">
 						<div class="card-body">
-							<p class="h2 text-center text-white">
+							<p class="h2 text-center text-white text-blue">
 								Secundaria
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 
 		</section>
 	</main>
@@ -243,7 +276,7 @@
 			<h5><span id="year"></span> Copyright. Todos los derechos Reservados Colegio La Mennais</h5>
 		</div>
 	</footer>
-	<script src="./js/getYear.js">
+	<script src="./js/getYear.js" defer>
 	</script>
 
 </body>
