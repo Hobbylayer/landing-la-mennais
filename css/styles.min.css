@@ -177,10 +177,11 @@ li {
 .planePath {
 	stroke: #035aa6;
 	stroke-width: 0.1%;
-	stroke-width: 0.5%;
+	stroke-width: 0.2%;
 	stroke-dasharray: 1% 2%;
 	stroke-linecap: round;
 	fill: none;
+	color: red;
 }
 
 .fil1 {
@@ -197,6 +198,19 @@ li {
 
 .fil3 {
 	fill: #aeafb0;
+}
+
+.svgPath {
+	z-index: 1;
+	position: absolute;
+	width: 1280px;
+	left: 20rem;
+	margin-top: 4rem;
+}
+
+.iframe {
+	position: relative;
+	z-index: 2;
 }
 
 @media (max-width: 750px) {
