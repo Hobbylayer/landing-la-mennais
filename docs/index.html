@@ -6,11 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/styles.min.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
-	<script src="./js/canvas.js" defer></script>
 	<title>La mennais</title>
 </head>
 
@@ -20,8 +19,8 @@
 
 		<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 		<div class="overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-		  <source src="https://expressativo.com/wp-content/uploads/2021/07/production-id-5000086_wBYZ5Ejp.mp4" type="video/mp4">
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/HomeImagen.jpg">
+		  <source src="http://patricio.com.uy/videoalianza/alianza.mp4" type="video/mp4">
 		</video>
 	</br>
 	<!-- Barra de navegación -->
@@ -168,6 +167,57 @@
 
 		<!-- WHY LA MENNAIS -->
 		<section>
+			<!-- Airplane animation -->
+				<svg viewBox="0 0 1920 1080" class="svgPath">
+					<path
+						id="planePath"
+						class="planePath"
+						d="M26.2,982.5c0,0,56.1-177.1,136-145.9
+						c19.1,7.5,32.4,25.3,34.2,45.7c2.3,24.9-7.2,64-82.7,53.3c-13.4-1.9-27.5-16.7-36-27.2c-22-27.1-39.2-83.3,129.3-132.9
+						c24.8-7.3,50.6-10.8,76.4-10.2c90.4,2.1,311.8-58.3,533.4-201.6c0,0,280.7-162.9,170,170.9c-10.8,32.7-34,59.8-64.7,75.4
+						c-48.4,24.5-114.4,26.2-118.1-143.7c-1.6-72.3,20.6-141.4,60.9-198c44.8-62.9,114.5-103.4,191.2-112.2l414.2-47.5
+						c61.3-7,118.2-35.5,160.2-80.7c33.4-36,77.4-68,114.5-42.3c16.8,11.7,25.7,32.1,22.8,52.3c-3.5,24.8-21.8,60.6-92.8,32.8
+						c-12.6-4.9-22.9-22.6-28.8-34.8c-15.2-31.4-18.9-90.1,156.5-99.4c25.8-1.4,51.7,1.2,76.7,7.8"
+					/>
+					<!-- d="M-226 626c439,4 636,-213 934,-225 755,-31 602,769 1334,658 562,-86 668,-698 266,-908 -401,-210 -893,189 -632,630 260,441 747,121 1051,91 360,-36 889,179 889,179" -->
+					<g id="plane">
+						<polygon
+							transform="scale(0.5)"
+							class="fil1"
+							points="-141,-10 199,0 -198,-72 -188,-61 -171,-57 -184,-57 "
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil2"
+							points="199,0 -141,-10 -163,63 -123,9 "
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil3"
+							points="-95,39 -113,32 -123,9 -163,63 -105,53 -108,45 -87,48 -90,45 -103,41 -94,41 "
+						/>
+						<path
+							transform="scale(0.5)"
+							class="fil4"
+							d="M-87 48l-21 -3 3 8 19 -4 -1 -1zm-26 -16l18 7 -2 -1 32 -7 -29 1 11 -4 -24 -1 -16 -18 10 23zm10 9l13 4 -4 -4 -9 0z"
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil1"
+							points="-83,28 -94,32 -65,31 -97,38 -86,49 -67,70 199,0 -123,9 -107,27 "
+						/>
+					</g>
+					<!-- Define the motion path animation -->
+					<animateMotion
+						xlink:href="#plane"
+						dur="5s"
+						repeatCount="indefinite"
+						rotate="auto"
+					>
+						<mpath xlink:href="#planePath" />
+					</animateMotion>
+				</svg>
+			<!-- Airplane animation -->
 			<div class="text-center mt-5 mb-3">
 				<h3 class="title__Three">
 					¿Por qué elegir la Mennais?
@@ -179,7 +229,7 @@
 					día.
 				</h4>
 			</div>
-			<iframe 
+				<iframe
 				width="560" 
 				height="315" 
 				src="https://www.youtube.com/embed/cpmStXMasAA?controls=0" 
@@ -190,25 +240,15 @@
 				encrypted-media; 
 				gyroscope; 
 				picture-in-picture" allowfullscreen
-				class="mt-5 video-2 rounded"
+				class="mt-5 video-2 rounded iframe"
 				>
 				</iframe>
 
-			<!-- IMAGEN CON CANVAS -->
-			<!-- <div class="card text-white mt-5 video__secction">
-				<img src="./assets/HomeImagen.jpg" class="card-img overlay__video" alt="...">
-				<div class="card-img-overlay d-flex flex-row justify-content-start align-items-center">
-					<h2 class="title__video">
-						"En La Mennais hay <br /> un lugar especial <br />para cada alumno"
-					</h2>
-				</div>
-			</div> -->
-			<!-- FIN IMAGEN CON CAVAS -->
 
 			<div class="row mt-3">
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__levels bg-transparent">
-						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top" alt="...">
+						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top card__image__size" alt="img_inicial">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
 								Inicial
@@ -218,7 +258,7 @@
 				</div>
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
 					<div class="card card__levels bg-transparent">
-						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top" alt="...">
+						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top card__image__size" alt="img_primaria">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
 								Primaria
@@ -227,17 +267,36 @@
 					</div>
 				</div>
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
-					<div class="card card__levels bg-transparent">
-						<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top" alt="img_secundaria">
+					<div class="card card__levels bg-transparent is__mobile">
+						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top card__image__size" alt="img_primaria">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
-								Secundaria
+								Primaria
 							</p>
+						</div>
+					</div>
+					<div class="card__fx">
+						<div class="card card__levels bg-transparent">
+							<div class="card__fx_img">
+								<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top card__image__size" alt="img_secundaria">
+							</div>
+							<div class="card-body">
+								<p class="h2 text-center text-white text-blue">
+									Secundaria
+								</p>
+								<!-- style="max-width: 293px; max-height: 360px;" -->
+							</div>
+							<div class="card__fx_details">
+								<div class="card_fx_text">
+									<p>
+										En las distintas asignaturas, propuestas y proyectos, estimulamos la investigación como herramienta indispensable para el futuro y para la transformación de la información en conocimiento. La apropiación del idioma Inglés como una segunda lengua, se logra no sólo a través de la preparación de exámenes internacionales, sino también en proyectos transversales y asignaturas en inglés. Ofrecemos una estructura de clases de apoyo a todos los alumnos, orientada al fortalecimiento de los aprendizajes. Los espacios pastorales y de voluntariado aseguran el crecimiento espiritual y la dimensión trascendente. La educación física y los deportes estimulan el desarrollo físico y el trabajo en equipo.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 
 
 		</section>
@@ -280,7 +339,8 @@
 		</div>
 	</footer>
 
-	<script src="./js/getYear.js" defer></script>
+	<script src="./js/getYear.min.js" defer></script>
+	<script src="./js/canvas.min.js" defer></script>
 	<!-- <script src="js/canvas.js"></script> -->
 
 </body>

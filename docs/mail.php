@@ -1,14 +1,14 @@
 <?php 
 	$name = $_POST['fullName'];
-    $correo = $_POST['email'];
-	$mensaje = $_POST['mensaje'];
+    $from = $_POST['email'];
+	$msg = $_POST['mensaje'];
     $telefono = $_POST['telf'];
-    $destinatario = "tuEmail@expressativo.com";
+    $to = "secretaria@lamennais.edu.uy";
 
-    $header ="Enviado desde La Mennais formulario de contacto";
-    $mensajeCompleto = $telefono . "\n" . $mensaje . "\nAtentamente: " . $name;
+    $subject ="Enviado desde La Mennais formulario de contacto";
+    $body = $telefono . "\n" . $msg . "\nAtentamente: " . $name;
     
-	if(mail($destinatario, $correo , $mensajeCompleto, $header) ){
+	if(mail($to, $from , $body, $subject) ){
         echo "<script> alert('Mensaje enviado exitosamente')</script>";
         echo "<script> setTimeout(\"location.href='index.html'\", 10 )</script>";
 	}else{
