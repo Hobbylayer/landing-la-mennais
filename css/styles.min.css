@@ -173,6 +173,32 @@ ul {
 li {
 	margin: 1rem 0 1rem 0;
 }
+
+.planePath {
+	stroke: #035aa6;
+	stroke-width: 0.1%;
+	stroke-width: 0.5%;
+	stroke-dasharray: 1% 2%;
+	stroke-linecap: round;
+	fill: none;
+}
+
+.fil1 {
+	fill: #d9dada;
+}
+
+.fil2 {
+	fill: #c5c6c6;
+}
+
+.fil4 {
+	fill: #9d9e9e;
+}
+
+.fil3 {
+	fill: #aeafb0;
+}
+
 @media (max-width: 750px) {
 	#title {
 		font-size: 2.2rem;

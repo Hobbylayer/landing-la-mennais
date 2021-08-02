@@ -168,6 +168,59 @@
 
 		<!-- WHY LA MENNAIS -->
 		<section>
+			<!-- Airplane animation -->
+			<div style="position: absolute; z-index: 1; margin-left: -15rem;">
+				<svg viewBox="0 0 2048 1080">
+					<path
+						id="planePath"
+						class="planePath"
+						d="M26.2,982.5c0,0,56.1-177.1,136-145.9
+						c19.1,7.5,32.4,25.3,34.2,45.7c2.3,24.9-7.2,64-82.7,53.3c-13.4-1.9-27.5-16.7-36-27.2c-22-27.1-39.2-83.3,129.3-132.9
+						c24.8-7.3,50.6-10.8,76.4-10.2c90.4,2.1,311.8-58.3,533.4-201.6c0,0,280.7-162.9,170,170.9c-10.8,32.7-34,59.8-64.7,75.4
+						c-48.4,24.5-114.4,26.2-118.1-143.7c-1.6-72.3,20.6-141.4,60.9-198c44.8-62.9,114.5-103.4,191.2-112.2l414.2-47.5
+						c61.3-7,118.2-35.5,160.2-80.7c33.4-36,77.4-68,114.5-42.3c16.8,11.7,25.7,32.1,22.8,52.3c-3.5,24.8-21.8,60.6-92.8,32.8
+						c-12.6-4.9-22.9-22.6-28.8-34.8c-15.2-31.4-18.9-90.1,156.5-99.4c25.8-1.4,51.7,1.2,76.7,7.8"
+					/>
+					<!-- d="M-226 626c439,4 636,-213 934,-225 755,-31 602,769 1334,658 562,-86 668,-698 266,-908 -401,-210 -893,189 -632,630 260,441 747,121 1051,91 360,-36 889,179 889,179" -->
+					<g id="plane">
+						<polygon
+							transform="scale(0.5)"
+							class="fil1"
+							points="-141,-10 199,0 -198,-72 -188,-61 -171,-57 -184,-57 "
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil2"
+							points="199,0 -141,-10 -163,63 -123,9 "
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil3"
+							points="-95,39 -113,32 -123,9 -163,63 -105,53 -108,45 -87,48 -90,45 -103,41 -94,41 "
+						/>
+						<path
+							transform="scale(0.5)"
+							class="fil4"
+							d="M-87 48l-21 -3 3 8 19 -4 -1 -1zm-26 -16l18 7 -2 -1 32 -7 -29 1 11 -4 -24 -1 -16 -18 10 23zm10 9l13 4 -4 -4 -9 0z"
+						/>
+						<polygon
+							transform="scale(0.5)"
+							class="fil1"
+							points="-83,28 -94,32 -65,31 -97,38 -86,49 -67,70 199,0 -123,9 -107,27 "
+						/>
+					</g>
+					<!-- Define the motion path animation -->
+					<animateMotion
+						xlink:href="#plane"
+						dur="5s"
+						repeatCount="indefinite"
+						rotate="auto"
+					>
+						<mpath xlink:href="#planePath" />
+					</animateMotion>
+				</svg>
+			</div>
+			<!-- Airplane animation -->
 			<div class="text-center mt-5 mb-3">
 				<h3 class="title__Three">
 					¿Por qué elegir la Mennais?
@@ -179,7 +232,8 @@
 					día.
 				</h4>
 			</div>
-			<iframe 
+			<div style="position: relative; z-index: 10;">
+				<iframe
 				width="560" 
 				height="315" 
 				src="https://www.youtube.com/embed/cpmStXMasAA?controls=0" 
@@ -193,6 +247,8 @@
 				class="mt-5 video-2 rounded"
 				>
 				</iframe>
+			</div>
+			
 
 			<!-- IMAGEN CON CANVAS -->
 			<!-- <div class="card text-white mt-5 video__secction">
