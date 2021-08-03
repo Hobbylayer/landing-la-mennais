@@ -19,6 +19,24 @@ header video {
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
+/* header #video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+} */
+
+.video-stream {
+	width: 100vw !important;
+	height: 100vh !important;
+}
 
 #content__header {
 	position: relative;
@@ -214,7 +232,7 @@ hr {
 	min-height: 75vh;
 }
 .card__features {
-	min-height: 370px;
+	min-height: 380px;
 	padding: 1.5rem 0.8rem 2rem 0.8rem;
 	text-align: center;
 }
