@@ -68,7 +68,7 @@ body {
 
 .card__fx {
 	position: relative;
-	top: 32%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 293px;
@@ -214,7 +214,7 @@ hr {
 	min-height: 75vh;
 }
 .card__features {
-	min-height: 330px;
+	min-height: 370px;
 	padding: 1.5rem 0.8rem 2rem 0.8rem;
 	text-align: center;
 }
@@ -231,7 +231,7 @@ hr {
 .section__divider {
 	height: 30vh;
 	background-color: var(--middle-blue);
-	margin-top: -30vh;
+	margin-top: -12vh;
 }
 .video-2 {
 	width: 100%;
@@ -324,6 +324,10 @@ li {
 	}
 	.svgPath {
 		display: none;
+	}
+
+	.is__mobile {
+		display: inline-block;
 	}
 
 	#title {

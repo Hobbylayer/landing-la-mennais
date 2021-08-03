@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./css/styles.min.css" />
+	<link rel="stylesheet" href="./css/styles.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@
 
 		<!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 		<div class="overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-		  <source src="https://expressativo.com/wp-content/uploads/2021/07/production-id-5000086_wBYZ5Ejp.mp4" type="video/mp4">
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="./assets/HomeImagen.jpg">
+		  <source src="http://patricio.com.uy/videoalianza/alianza.mp4" type="video/mp4">
 		</video>
 	</br>
 	<!-- Barra de navegación -->
@@ -131,8 +131,7 @@
 							<hr />
 						</div>
 						<p class="card-text text-center">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-							nemo, ducimus facere, adipisci nobis cum exercitationem.
+							Consideramos condición fundamental para crecer plenamente hacerlo en un clima institucional saludable donde se combinen las experiencias comunitarias y el conocimiento personal
 						</p>
 					</div>
 				</div>
@@ -144,8 +143,7 @@
 							<hr />
 						</div>
 						<p class="card-text text-center">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-							nemo, ducimus facere, adipisci nobis cum exercitationem.
+							Nuestros alumnos son estimulados a enfrentar desafíos que los impulsan a adquirir conocimientos, junto a un cuerpo docente experimentado y motivador.
 						</p>
 					</div>
 				</div>
@@ -157,8 +155,7 @@
 							<hr />
 						</div>
 						<p class="card-text text-center">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-							nemo, ducimus facere, adipisci nobis cum exercitationem.
+							Nuestra propuesta trasciende la perspectiva académica individual, fomenta la generación de lazos y crea una comunidad proactiva y comprometida con la sociedad.
 						</p>
 					</div>
 				</div>
@@ -243,52 +240,122 @@
 				class="mt-5 video-2 rounded iframe"
 				>
 				</iframe>
-			
 
-			<!-- IMAGEN CON CANVAS -->
-			<!-- <div class="card text-white mt-5 video__secction">
-				<img src="./assets/HomeImagen.jpg" class="card-img overlay__video" alt="...">
-				<div class="card-img-overlay d-flex flex-row justify-content-start align-items-center">
-					<h2 class="title__video">
-						"En La Mennais hay <br /> un lugar especial <br />para cada alumno"
-					</h2>
-				</div>
-			</div> -->
-			<!-- FIN IMAGEN CON CAVAS -->
 
 			<div class="row mt-3">
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
-					<div class="card card__levels bg-transparent">
-						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top" alt="...">
+					<div class="card card__levels bg-transparent is__mobile">
+						<img src="./assets/01-Inicial.jpg" class="rounded card-img-top card__image__size" alt="img_inicial">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
 								Inicial
 							</p>
 						</div>
 					</div>
+
+					<div class="card__fx">
+						<div class="card card__levels bg-transparent">
+							<div class="card__fx_img">
+								<img src="./assets/01-Inicial.jpg" class="rounded card-img-top card__image__size" alt="img_secundaria">
+							</div>
+							<div class="card-body">
+								<p class="h2 text-center text-white text-blue">
+									Secundaria
+								</p>
+								<!-- style="max-width: 293px; max-height: 360px;" -->
+							</div>
+							<div class="card__fx_details">
+								<div class="card_fx_text">
+									<p>
+										Guiamos a los niños en el desarrollo de habilidades sociales y cognitivas que les permiten resolver situaciones cotidianas, demostrar sus emociones, ser tolerantes, trabajar colaborativamente y crecer en su dimensión espiritual. Atendemos a las capacidades individuales y estimulamos el desarrollo de las múltiples formas de inteligencia. Esto se realiza a través de una propuesta que aborda diferentes áreas: lengua, matemáticas, ciencias de la naturaleza, inglés, informática, expresión corporal y plástica, educación física, sensibilización musical, y catequesis. A través del juego, la música, trabajos gráficos y plásticos, los niños van experimentando la dimensión trascendente de su vida. Promovemos la capacidad de asombro, la contemplación de lo cotidiano y de la naturaleza.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
 				</div>
+
+
+
+				
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
-					<div class="card card__levels bg-transparent">
-						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top" alt="...">
+					<div class="card card__levels bg-transparent is__mobile">
+						<img src="./assets/02-Primaria.jpg" class="rounded card-img-top card__image__size" alt="img_primaria">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
 								Primaria
 							</p>
 						</div>
 					</div>
+
+					<div class="card__fx">
+						<div class="card card__levels bg-transparent">
+							<div class="card__fx_img">
+								<img src="./assets/02-Primaria.jpg" class="rounded card-img-top card__image__size" alt="img_secundaria">
+							</div>
+							<div class="card-body">
+								<p class="h2 text-center text-white text-blue">
+									Secundaria
+								</p>
+								<!-- style="max-width: 293px; max-height: 360px;" -->
+							</div>
+							<div class="card__fx_details">
+								<div class="card_fx_text">
+									<p>
+										Nuestra propuesta educativa es de carácter integral. Atiende todos los aspectos que el niño necesita para crecer en su dimensión física, espiritual e intelectual. Incentivamos un sólido desarrollo de la lectura, la escritura y el razonamiento lógico-matemático, la enseñanza del inglés con una importante carga horaria, así como la utilización de las herramientas que brindan las nuevas tecnologías de la información y comunicación. La educación física y la práctica deportiva son atendidas para el integral desarrollo de nuestros alumnos. La atención a los vínculos y la mirada trascendente de lo cotidiano a través de los espacios pastorales ayudan al crecimiento integral de nuestros niños.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
 				</div>
 				<div class="col-12 col-md-4 d-flex flex-row justify-content-center align-items-center">
-					<div class="card card__levels bg-transparent">
-						<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top" alt="img_secundaria">
+					
+					
+					
+					
+					<div class="card card__levels bg-transparent is__mobile">
+						<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top card__image__size" alt="img_primaria">
 						<div class="card-body">
 							<p class="h2 text-center text-white text-blue">
 								Secundaria
 							</p>
 						</div>
 					</div>
+
+
+
+
+					<div class="card__fx">
+						<div class="card card__levels bg-transparent">
+							<div class="card__fx_img">
+								<img src="./assets/03-Secundaria.jpg" class="rounded card-img-top card__image__size" alt="img_secundaria">
+							</div>
+							<div class="card-body">
+								<p class="h2 text-center text-white text-blue">
+									Secundaria
+								</p>
+								<!-- style="max-width: 293px; max-height: 360px;" -->
+							</div>
+							<div class="card__fx_details">
+								<div class="card_fx_text">
+									<p>
+										En las distintas asignaturas, propuestas y proyectos, estimulamos la investigación como herramienta indispensable para el futuro y para la transformación de la información en conocimiento. La apropiación del idioma Inglés como una segunda lengua, se logra no sólo a través de la preparación de exámenes internacionales, sino también en proyectos transversales y asignaturas en inglés. Ofrecemos una estructura de clases de apoyo a todos los alumnos, orientada al fortalecimiento de los aprendizajes. Los espacios pastorales y de voluntariado aseguran el crecimiento espiritual y la dimensión trascendente. La educación física y los deportes estimulan el desarrollo físico y el trabajo en equipo.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
 
 
 		</section>
