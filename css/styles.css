@@ -312,8 +312,8 @@ li {
 .svgPath {
 	z-index: 1;
 	position: absolute;
-	width: 1280px;
-	left: 20rem;
+	width: 1270px;
+	left: -17%;
 	margin-top: 4rem;
 }
 
@@ -326,7 +326,7 @@ li {
 	display: none;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
 	.svgPath {
 		z-index: 1;
 		position: absolute;
@@ -334,7 +334,7 @@ li {
 		left: 3rem;
 		margin-top: 4rem;
 	}
-}
+} */
 
 @media (max-width: 768px) {
 	.card__fx {
